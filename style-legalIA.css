@@ -61,4 +61,10 @@ p:last-child {
     margin-bottom: 70px;
 }
 
+@media (max-width: 768px;) {
+    main {
+        width: 90%;
+    }
+}
+
 
