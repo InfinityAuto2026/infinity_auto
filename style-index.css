@@ -740,8 +740,7 @@ nav {
 }
  
 .card-infos1, .card-infos2, .card-infos3, .card-infos4, .card-infos5 {
-  flex: 1 1 200px;
-  min-width: 200;
+  width: 260px;
   align-items: center;
   display: flex;
   flex-direction: column;
