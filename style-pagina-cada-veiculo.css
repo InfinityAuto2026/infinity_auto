@@ -251,7 +251,6 @@ label {
 }
 
 .card-direitos {
-  width: 100%;
   text-align: center;
   margin-top: 20px;
   padding: 20px;
@@ -416,8 +415,7 @@ label {
 
 @media (max-width: 1140px) {
     .conteudo-footer {
-        display: grid;
-        grid-template-columns: 1fr; 
-        row-gap: 20px;
+        display: flex;
+        flex-direction: column;
     }
 }
