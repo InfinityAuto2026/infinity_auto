@@ -375,11 +375,16 @@ a {
 
 @media (max-width: 768px) {
     .container-geral {
-        height: 220px;
+        height: 270px;
+        width: 380px:
+    }
+
+    .card-img {
+         display: none;
     }
 
 @media (max-width: 1000px) {
-    .card-img{
+    .card-img {
         display: none;
     }
 
