@@ -278,7 +278,8 @@ form {
 
 @media (max-width: 768px) {
     .container-login {
-        height: 220px;
+        height: 270px;
+        width: 370px;
     {
 
 @media (max-width: 1000px) {
