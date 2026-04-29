@@ -53,7 +53,7 @@ a {
     background-color: rgb(223, 223, 223);
     display: flex;
     width: 50%;
-    height: 64%;
+    height: 500px;
     margin: 60px auto;
     z-index: 1;
     border-radius: 20px;
