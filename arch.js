@@ -44,7 +44,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
 async function carregarListaVeiculos() {
 
-  const isHome = document.body.dataset.page === "home";
+  const isHome =
+  window.location.pathname.endsWith("/") ||
+  window.location.pathname.includes("index.html");
   /*const isHome = window.location.pathname.includes("index");*/
 
   const container = document.getElementById("lista-veiculos");
