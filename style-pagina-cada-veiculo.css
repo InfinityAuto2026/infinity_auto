@@ -264,8 +264,7 @@ label {
 }
  
 .card-infos1, .card-infos2, .card-infos3, .card-infos4, .card-infos5 {
-  flex: 1 1 130px;
-  min-width: 130px;
+  width: 260px;
   align-items: center;
   display: flex;
   flex-direction: column;
