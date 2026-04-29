@@ -242,7 +242,8 @@ footer a:hover {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  padding-top: 30px;
+  padding-top: 20px;
+  width: 260px;
 
 }
 
