@@ -276,6 +276,11 @@ form {
     margin-left: 8px;
 }
 
+@media (max-width: 768px) {
+    .container-login {
+        height: 220px;
+    {
+
 @media (max-width: 1000px) {
     .container-img {
         display: none;
