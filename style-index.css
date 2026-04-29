@@ -765,7 +765,7 @@ footer img {
 
 @media (max-width: 1140px) {
 
-  .conteudo-footer {
+  .container-footer {
     display: grid;
     grid-template-columns: 1fr;
     row-gap: 20px;
