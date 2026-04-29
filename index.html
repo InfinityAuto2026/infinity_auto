@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>Infinity Auto</title>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Anton&family=Oswald:wght@200..700&display=swap');
+    </style>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style-index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    
+    <header>
+
+      <div class="barra-inicial">
+        <img src="logo.bg.png">
+
+        <nav id="menu">
+          <ul class="menu">
+
+            <li><a href="sobre.html" target="_blank">Sobre nós</a></li>
+
+            <li>
+              <input type="checkbox" id="item1">
+              <label for="item1">Carros<i class="bi bi-caret-down-fill"></i></label>
+              
+
+              <ul class="submenu">
+                <li><a href="todos-veiculos.html?tipo=carros">Todos os carros</a></li>
+                <li><a href="todos-veiculos.html?tipo=carros&condicao=novos">Novos</a></li>
+                <li><a href="todos-veiculos.html?tipo=carros&condicao=seminovos">Seminovos</a></li>
+              </ul>
+            </li>
+
+            <li><a href="entrar.html" target="_blank" id="btnEntrar">Entrar</a></li>
+      
+          </ul>
+        </nav>
+
+        <div class="container-user"></div>
+
+      </div>
+
+      <div class="header-txt">
+        <p>Destrave aventuras.</p>
+        <p>Seu veículo espera por você!</p>
+      </div>
+      <div class="card-explorar">
+        <p>Explore nossos veiculos!</p>
+        <a href="todos-veiculos.html"><button>Ver Veiculos</button></a>
+      </div>
+
+    </header>
+
+  <div class="borda-marca">
+    <div class="container-marcas">
+      <div class="secao-txt">
+        <h2>Marcas</h2>
+        <p>procure por marcas</p>
+      </div>
+      <div class="ver-marcas">
+        <div class="marcas">
+          <a href="todos-veiculos.html?marca=fiat">
+            <div class="card-marca" data-nome="FIAT">
+              <img src="fiat.logo.png">
+            </div>
+          </a>
+            <a href="todos-veiculos.html?marca=hyundai">
+            <div class="card-marca" data-nome="HYUNDAI">
+              <img src="hyundai.logo.png">
+            </div>
+          </a>
+          <a href="todos-veiculos.html?marca=ford">
+            <div class="card-marca" data-nome="FORD">
+              <img src="ford.logo.png">
+            </div>
+          </a>
+          <a href="todos-veiculos.html?marca=toyota">
+            <div class="card-marca" data-nome="TOYOTA">
+              <img src="toyota.logo.png">
+            </div>
+          </a>
+          <a href="todos-veiculos.html?marca=volkswagen">
+            <div class="card-marca" data-nome="VOLKSWAGEN">
+              <img src="volks.logo.png">
+            </div>
+          </a>
+          <a href="todos-veiculos.html?marca=chevrolet">
+            <div class="card-marca" data-nome="CHEVROLET">
+              <img src="chevrolet.logo.png">
+            </div>
+          </a>
+            <a href="todos-veiculos.html?marca=nissan">
+            <div class="card-marca" data-nome="NISSAN">
+              <img src="nissan.logo.png">
+            </div>
+          </a>
+          <a href="todos-veiculos.html?marca=renault">
+            <div class="card-marca" data-nome="RENAULT">
+              <img src="renault.logo.png">
+            </div>
+          </a>
+        </div>
+        <div class="ver-mais">
+          <input type="checkbox" id="toggle">
+
+          <div class="cards-extra">
+            <a href="todos-veiculos.html?marca=peugeot">
+              <div class="card-marca" data-nome="PEUGEOT">
+                <img src="peugeot.log.png">
+              </div>
+            </a>
+            <a href="todos-veiculos.html?marca=audi">
+              <div class="card-marca" data-nome="AUDI">
+                <img src="audi.logo.png">
+              </div>
+            </a>
+            <a href="todos-veiculos.html?marca=mercedes-benz">
+              <div class="card-marca" data-nome="MERCEDES-BENZ">
+                <img src="mercedes.logo.png">
+              </div>
+            </a>
+            <a href="todos-veiculos.html?marca=mitsubishi">
+              <div class="card-marca" data-nome="MITSUBISHI">
+                <img src="mitsubishi.logo.png">
+              </div>
+            </a>
+            <a href="todos-veiculos.html?marca=porsche">
+              <div class="card-marca" data-nome="PORSCHE">
+                <img src="porsche.logo.png">
+              </div>
+            </a>
+            <a href="todos-veiculos.html?marca=jeep">
+              <div class="card-marca" data-nome="JEEP">
+                <img src="jeep.logo.png">
+              </div>
+            </a>
+            <a href="todos-veiculos.html?marca=volvo">
+              <div class="card-marca" data-nome="VOLVO">
+                <img src="volvo.logo.png">
+              </div>
+            </a>
+            <a href="todos-veiculos.html?marca=byd">
+              <div class="card-marca" data-nome="BYD">
+                <img src="byd.logo.png">
+              </div>
+            </a>
+          </div>
+
+          <label for="toggle" class="botao-vertudo">Ver tudo</label>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="secao-txt">
+    <h2>Veiculos</h2>
+    <p>Veja nossos veiculos</p>
+  </div>
+  <div id="lista-veiculos"></div>
+  <div class="main-veiculos-btn">
+    <p>Veja todos nossos veículos</p>
+    <a href="todos-veiculos.html"><button class="ver-tudo-btn">Ver tudo</button></a>
+  </div>
+
+  <div class="container-procurados">
+    <div class="secao-txt">
+      <h2>Veículos mais procurados</h2>
+      <p>Mais pesquisados no nosso site</p>
+    </div>
+    <div class="procurados">
+      <div class="card-procurados" data-nome="fiat strada">
+      </div>
+      <div class="card-procurados" data-nome="hyundai creta">
+      </div>
+      <div class="card-procurados" data-nome="hyundai hb20">
+      </div>
+      <div class="card-procurados" data-nome="byd dolphin">
+      </div>
+      <div class="card-procurados" data-nome="volkswagen t-cross">
+      </div>
+    </div>
+  </div>
+
+  <div class="container-categorias">
+    <div class="secao-txt">
+      <h2>Categorias</h2>
+      <p>Procure por categorias</p>
+    </div>
+    <div class="categorias">
+      <a href="todos-veiculos.html?categoria=picape">
+        <div class="card-categorias">
+          <img src="pickup.bg.png">
+          <p>Picape</p>
+        </div>
+      </a>
+
+      <a href="todos-veiculos.html?categoria=suv">
+        <div class="card-categorias">
+          <img src="suv.bg.png">
+          <p>SUV</p>
+        </div>
+      </a>
+
+      <a href="todos-veiculos.html?categoria=hatch">
+        <div class="card-categorias">
+          <img src="hatch.bg.png">
+          <p>Hatch</p>
+        </div>
+      </a>
+
+      <a href="todos-veiculos.html?categoria=sedan">
+        <div class="card-categorias">
+          <img src="sedan.bg.png">
+          <p>Sedan</p>
+        </div>
+      </a>
+    </div>
+  </div>
+
+  <footer>
+
+    <div class="container-footer">
+      <div class="conteudo-footer">
+        <div class="card-infos2">
+          <p>Navegação</p>
+          <a href="#">Pagina Inicial</a>
+          <a href="sobre.html">Quem Somos</a>
+          <a href="todos-veiculos.html">Nosso Estoque</a>
+          <a href="entrar.html">Entrar / Cadastrar</a>
+        </div>
+        <div class="card-infos3">
+          <a href="legalIA.html" target="_blank"><p>Politica de privacidade</p>
+          <p>Termos de uso</p>
+          <p>Gerenciamento de cookies</p></a>
+        </div>
+        <div class="card-infos4">
+          <p>Nos contate</p>
+          <a href=""><i class="bi bi-whatsapp"></i>(81) 9-71059387</a>
+          <a href=""><i class="bi bi-envelope-at"></i>infinityautocontato@gmail.com</a>
+        </div>
+        <div class="card-infos5">
+          <p>Nos siga</p>
+          <a href="https://www.instagram.com/infinityauto_web"><i class="bi bi-instagram" target="blank"></i>infinitauto_web</a>
+        </div>
+      </div>
+      <div class="card-direitos">
+        <p>@ INFINITY AUTO 2026 Todos os direitos reservados</p>
+      </div>
+    </div>
+  </footer>
+
+<script type="module" src="arch.js"></script>
+
+</body>
+
+</html>

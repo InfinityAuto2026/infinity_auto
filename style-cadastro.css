@@ -1,0 +1,292 @@
+p, h1, h2, h3, h4, h5, h6, label {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 100vh;
+    background-image: url('login.bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    z-index: 0;
+}
+
+body::before {
+    content: "";
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.397);
+    position: absolute;
+}
+
+nav {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 35px;
+}
+
+nav i {
+    color: black;
+}
+
+nav i:hover {
+    background-color: rgba(112, 112, 112, 0.658);
+    color: rgba(255, 255, 255, 0.692);
+    border-radius: 50%;
+}
+
+.container-geral {
+    display: flex;
+    position: absolute;
+    width: 30%;
+    height: 68%;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 20px;
+    background-color: rgb(235, 235, 235);
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.8);
+}
+
+.container-login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding-block: 20px;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 87%;
+}
+
+.container-login h2 {
+    display: flex;
+    justify-content: center;
+    margin-block: 70px;
+    font-family: 'oswald';
+}
+
+.container-login h5 {
+    display: flex;
+    margin-right: auto;
+    margin-top: 30px;
+    margin-bottom: 4px;
+    font-weight: bold;
+    color: rgb(63, 63, 63);
+}
+
+.container-login input {
+    height: 25px;
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid rgb(95, 95, 95);
+    background-color: rgb(219, 219, 219);
+    transition: 0.2s;
+}
+
+.container-login input:hover {
+    transform: scale(1.01);
+    box-shadow: 0 0 4px #b4000079;
+}
+
+.container-login button {
+    height: 35px;
+    width: 50%;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 8px;
+    background-color: firebrick;
+    color: white;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: 0.2s;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.container-login button:hover {
+    background-color: #7a0000;
+    transform: scale(1.02);
+}
+
+.card-input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+}
+
+.container-img {
+    width: 55%;
+    background-image: url('login.bg.jpg');
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 20% 40%);
+    border-radius: 0 20px 20px 0;
+}
+
+.container-img::before {
+    background-color: rgba(0, 0, 0, 0.342);
+    inset: 0;
+    content: "";
+    position: absolute;
+    border-radius: 0 20px 20px 0;
+}
+
+.container-user {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    height: 100%;
+    margin-left: auto;
+}
+
+.card-redes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 93%;
+    gap: 13px;
+}
+
+.card-redes i {
+    color: white;
+    font-size: 28px;
+}
+
+.card-redes p {
+    color: white;
+    font-weight: bold;
+}
+
+.card-user {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    width: 180px;
+    padding-inline: 13px;
+    padding-top: 10px;
+    padding-bottom: 2px;
+    background-color: #d64747b4;
+    position: absolute;
+    top: 22%;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.7);
+}
+
+.card-user i {
+    font-size: 170px;
+    color: white;
+}
+
+.txt-ou {
+    border-bottom: 2px solid rgb(192, 192, 192);
+    height: 17px;
+    width: 80%;
+    max-width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.txt-ou p {
+    background-color: rgb(235, 235, 235);
+    margin-top: 12px;
+    padding-inline: 15px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.entrar-rede {
+    margin-block: 20px;
+    font-size: 12px;
+    font-weight: bold;
+    color: rgb(53, 53, 53);
+}
+
+.card-contas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contas {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 80%;
+}
+
+.logo1, .logo2, .logo3 {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    height: 35px;
+    width: 160px;
+    border-radius: 8px;
+    background-color: rgb(0, 0, 0);
+    transition: 0.1s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo1 i, .logo2 i, .logo3 i {
+    color: white;
+    font-size: 18px;
+}
+
+.logo1:hover, .logo2:hover, .logo3:hover {
+    transform: scale(1.01);
+}
+
+.logo1:hover {
+    background-color: rgb(179, 5, 28);
+}
+
+.logo2:hover {
+    background-color: blue;
+}
+
+.logo3:hover {
+    background-color: rgb(32, 32, 32);
+}
+
+.logo1 p, .logo2 p, .logo3 p {
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    margin-left: 8px;
+}
+
+@media (max-width: 1000px) {
+    .container-img {
+        display: none;
+    }
+
+    .container-login {
+        width: 100%;
+    }
+
+    .container-geral {
+        width: 70%;
+    }
+
+}

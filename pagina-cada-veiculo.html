@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>Veiculo</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Anton&family=Oswald:wght@200..700&display=swap');
+    </style>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style-pagina-cada-veiculo.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  </head>
+<body>
+    <div class="menu">
+        <div class="home-btn"> 
+            <a href="index.html"><i class="bi bi-house-door-fill"></i></a>
+            <button class="voltar-btn" onclick="history.back()">Voltar</button>
+        </div>
+        <div class="marca-txt"></div>
+        <div class="logo-menu">
+            <img src="logo.preto.bg.png">
+        </div>
+    </div>
+
+    <main>
+
+        <div class="container-imagem">
+            <div class="titulo-imagem">
+                <p id="nomeVeiculo"></p>
+            </div>
+            <div class="imagem">
+                <div class="seta-left">
+                    <i class="bi bi-arrow-left"></i>
+                </div>
+                <div class="card-imagem" id="galeriaImagem"></div>
+                <div class="seta-right">
+                    <i class="bi bi-arrow-right"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-contato">
+            <h4>Solicite o contato de um de nossos atendentes</h4>
+            <button class="contatar-btn" id="btnAbrirContato">Entrar em contato</button>
+
+            <div id="formContainer" style="display:none;">
+                <form class="form-box" id="formContato">
+                    <h3>Contato<span> INFINITY AUTO</span></h3>
+                    <p>Seu nome</p>
+                    <input type="text" id="nomeContato" placeholder="Seu nome">
+                    <p>Seu email</p>
+                    <input type="email" id="emailContato" placeholder="Seu email">
+                    <textarea id="mensagemContato" placeholder="Mensagem"></textarea>
+
+                    <button type="submit">Enviar</button>
+                    <button type="button" id="btnFechar">Fechar</button>
+                    <h5>Nossa equipe entrará em contato com você</h5>
+                </form>
+            </div>
+        </div>
+
+        <div class="container-infos">
+
+            <div class="card-detalhes">
+                <div class="titulo-info">
+                    <label><span>ESPECIFICAÇÕES</span> DO VEÍCULO</label>
+                </div>
+                <div class="marca-txt"></div>
+                <div class="card-valor">
+                    <label id="precoVeiculo">R$</label>
+                </div>
+                <div class="especificacoes">
+                    <div class="card-info">
+                        <label id="anoVeiculo"></label>
+                        <p>Ano</p>
+                    </div>
+                    <div class="card-info">
+                        <label id="combustivelVeiculo"></label>
+                        <p>Combustivel</p>
+                    </div>
+                    <div class="card-info">
+                        <label id="kmVeiculos"></label>
+                        <p>Quilometragem</p>
+                    </div>
+                    <div class="card-info">
+                        <label id="cambioVeiculo"></label>
+                        <p>Câmbio</p>
+                    </div>
+                    <div class="card-info">
+                        <label id="condicaoVeiculo"></label>
+                        <p>Condição</p>
+                    </div>
+                    <div class="card-info">
+                        <label id="corpoVeiculo"></label>
+                        <p>Corpo</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+  <footer>
+
+    <div class="container-footer">
+      <div class="conteudo-footer">
+        <div class="card-infos2">
+          <p>Navegação</p>
+          <a href="index.html">Pagina Inicial</a>
+          <a href="sobre.html">Quem Somos</a>
+          <a href="todos-veiculos.html">Nosso Estoque</a>
+          <a href="entrar.html">Entrar / Cadastrar</a>
+        </div>
+        <div class="card-infos3">
+          <a href="legalIA.html" target="_blank"><p>Politica de privacidade</p>
+          <p>Termos de uso</p>
+          <p>Gerenciamento de cookies</p></a>
+        </div>
+        <div class="card-infos4">
+          <p>Nos contate</p>
+          <a href=""><i class="bi bi-whatsapp"></i>(81) 9-71059387</a>
+          <a href=""><i class="bi bi-envelope-at"></i>infinityautocontato@gmail.com</a>
+        </div>
+        <div class="card-infos5">
+          <p>Nos siga</p>
+          <a href=""https://www.instagram.com/infinityauto_web""><i class="bi bi-instagram" target="blank"></i>infinityauto_web</a>
+        </div>
+      </div>
+      <div class="card-direitos">
+        <p>@ INFINITY AUTO 2026 Todos os direitos reservados</p>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="arch.js"></script>
+
+</body>
+</html>

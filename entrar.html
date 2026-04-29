@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Anton&family=Oswald:wght@200..700&display=swap');
+    </style>
+    <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+    <title>Entrar</title>
+    <link rel="stylesheet" href="style-entrar.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+    <div class="menu">
+        <a href="index.html"><i class="bi bi-house-door-fill"></i></a>
+    </div>
+    <div class="container-login">
+        <div class="card-img">
+            <div class="texto-inicial">
+                <i class="bi bi-person-circle"></i>
+            </div>   
+            <div class="redes-sociais">
+                <p>Nos siga</p>
+                <a href=""><i class="bi bi-instagram"></i></a>
+                <a href=""><i class="bi bi-twitter-x"></i></a>
+                <a href=""><i class="bi bi-facebook"></i></a>
+            </div>
+        </div>
+        <div class="card-login">
+            <div class="card-cadastro">
+                <label class="cadastro-txt">Ainda não possui uma conta?</label>
+                <a href="cadastro.html"><button class="cadastre-se">cadastre-se</button></a>
+            </div>
+            <div class="titulo">
+                <p>Entrar com email</p>
+            </div>
+            <form id="formLogin">
+                <div class="card-input">
+                    <label class="email-txt">Email</label>
+                    <input type="email" placeholder="Insira seu email" id="emailLogin" required>
+                    <label class="senha-txt">Senha</label>
+                    <input type="password" placeholder="Insira sua senha" id="senhaLogin" required>
+                    <p>Esqueceu a senha?</p>
+                    <div class="login-btn">
+                        <button type="submit" class="logar">Entrar</button>
+                    </div>
+                </div>
+            </form>
+            
+        </div>
+    </div>
+
+    <script type="module" src="arch.js"></script>
+
+</body>
+</html>

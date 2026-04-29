@@ -1,0 +1,425 @@
+body {
+    margin: 0;
+    background-color: rgb(214, 214, 214);
+}
+
+header {
+    display: flex;
+    background-color: white;
+    height: 100px;
+    border-bottom: 2px solid rgba(128, 128, 128, 0.452);
+}
+
+main {
+    display: flex;
+}
+
+p {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.card-homebtn {
+    width: 22%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.card-homebtn button {
+    height: 35px;
+    padding-inline: 15px;
+    border: none;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    margin-right: 30px;
+    margin-bottom: 15px;
+}
+
+.card-homebtn a {
+    color: black;
+
+}
+
+.card-homebtn i {
+    position: absolute;
+    top: 53px;
+    left: 290px;
+    font-size: 28px;
+}
+
+.card-homebtn i:hover {
+    background-color: rgba(128, 128, 128, 0.534);
+    border-radius: 50%;
+    padding: 1px;
+    cursor: pointer;
+}
+
+.card-homebtn button:hover {
+    background-color: #7a0000;
+    transform: scale(1.02);
+    cursor: pointer;
+}
+
+.card-titulo {
+    width: 60%;
+    display: flex;
+    align-items: flex-end;
+}
+
+.card-titulo h2 {
+    margin-bottom: 14px;
+    font-family: 'oswald';
+    font-size: 24px
+}
+
+.card-logo {
+    display: flex;
+    align-items: center;
+    margin-top: 13px;
+}
+
+.card-logo img {
+    height: clamp(40px, 5vw, 180px);
+}
+
+.container-filtros {
+    background-color: white;
+    width: 12%;
+    min-width: 180px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    position: fixed;
+    overflow-y: auto;
+    top: 0;
+    left: 0;
+    padding: 0 10px;
+}
+
+.container-filtros::-webkit-scrollbar {
+    width: 6px;
+    background-color: rgb(167, 167, 167);
+}
+
+.card-filtro1, .card-filtro2, .card-filtro3, .card-filtro4, .card-filtro5 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-block: 32px;
+    border-bottom: 2px solid rgba(216, 216, 216, 0.452);
+}
+
+.card-secao {
+    display: flex;
+    justify-content: center;
+}
+
+.card-secao p {
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'oswald';
+    margin-bottom: 10px;
+}
+
+.label-1 {
+    margin-block: 8px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+}
+
+.label-2 {
+    margin-block: 8px;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+select {
+    background-color: rgb(53, 53, 53);
+    color: white;
+    padding: 2px;
+    border-radius: 5px;
+}
+
+.card-marcas {
+    display: flex;
+    gap: 10px;
+}
+
+.marca {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(231, 231, 231);
+    height: 40px;
+    width: 40px;
+    gap: 10px;
+    border-radius: 5px;
+    border: 1px solid rgba(128, 128, 128, 0.473);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    transition: 0.1s;
+}
+
+.marca img {
+    height: 30px;
+}
+
+.marca:hover {
+    transform: scale(1.02);
+}
+
+.ver-tudo-btn {
+    margin-top: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.ver-tudo-btn:hover {
+  background-color: rgba(105, 105, 105, 0.322);
+  border-radius: 5px;
+  transform: scale(1.02);
+}
+
+#toggle { 
+    display: none;
+}
+
+.cards-extra {
+    display: none;
+    gap: 10px;
+    width: 100%;
+    margin-block: 10px;
+}
+
+#toggle:checked ~ .cards-extra {
+    display: grid;
+    grid-template-columns: 40px 40px 40px 40px;
+    justify-content: center;
+}
+
+.card-input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-input p {
+    margin-top: 6px;
+}
+
+.label-2-input {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    margin-block: 6px;
+}
+
+.card-input input {
+    border-radius: 5px;
+    border: none;
+    width: 60%;
+    height: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    background-color: rgba(179, 179, 179, 0.671);
+    border: 1px solid gray;
+}
+
+.filtro-btn {
+    display: flex;
+    gap: 25px;
+    padding: 15px 0;
+}
+
+.filtrar-btn, .limpar-filtro-btn {
+    border-radius: 5px;
+    border: 1px solid rgb(173, 173, 173);
+    height: 25px;
+}
+
+.filtrar-btn:hover, .limpar-filtro-btn:hover {
+    border-radius: 5px;
+    background-color: rgba(153, 153, 153, 0.404);
+}
+
+#lista-veiculos {
+    width: 100%;
+    margin-left: clamp(234px, 1vw, 350px);
+    margin-top: 60px;
+    margin-right: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    row-gap: 30px;
+    column-gap: 30px;
+}
+
+.card-veiculo {
+    background-color: rgb(255, 255, 255);
+    height: 280px;
+    width: 210px;
+    padding: 6px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transition: 0.1s;
+}
+
+.card-veiculo:hover {
+    transform: scale(1.01);
+}
+
+.card-foto {
+    height: 45%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    box-shadow: inset 0 0 30px rgba(0, 0, 0, 0.4);
+    background-color: rgb(230, 230, 230);
+}
+
+.card-foto img {
+    width: 90%;
+    height: 90%;
+    object-fit: cover;
+}
+
+.card-foto p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.card-txt {
+    height: 20%;
+    display: flex;
+}
+
+.card-txt h5{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin: 0;
+    color: rgb(110, 110, 110);
+    margin-top: 5px;
+}
+
+.marca-txt {
+    font-family: 'oswald';
+    margin-bottom: 10px;
+}
+
+.marca-txt label {
+    font-weight: bold;
+    color: rgb(80, 80, 80);
+    font-size: 15px;
+}
+
+.marca-txt p {
+    font-weight: bold;
+    color: rgb(58, 58, 58);
+    font-size: 16px;
+}
+
+.card-ano, .card-combustivel, .card-km {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 6px;
+}
+
+.card-ano p,.card-combustivel p, .card-km p {
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin-top: 8px;
+    color: rgb(51, 51, 51);
+}
+
+.card-ano i,.card-combustivel i, .card-km i {
+    font-size: 16px;
+    color: rgb(61, 61, 61);
+    margin-top: 4px;
+}
+
+.card-ano {
+    width: 20%;
+}
+
+.card-km {
+    width: 40%;
+    border-inline: 1px solid rgba(138, 138, 138, 0.493);
+}
+
+.card-combustivel {
+    width: 40%;
+}
+
+.card-valor {
+    display: flex;
+    justify-content: center;
+    padding-block: 10px;
+    padding: 5px;
+    border: 1px solid rgba(128, 128, 128, 0.336);
+    background-color: rgb(223, 223, 223);
+}
+
+.card-valor p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: rgb(41, 41, 41);
+}
+
+@media (max-width: 768px) {
+    .card-logo, .card-titulo {
+        display: none;
+    }
+
+    .container-filtros {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        flex-direction: row;
+        position: fixed;
+        top: 0;
+        height: 270px;
+        width: 100%;
+        z-index: 999;
+        border-bottom: 4px solid rgb(143, 143, 143);
+    }
+
+    .card-filtro3, .card-filtro1, .card-filtro2, .card-filtro4, .card-filtro5 {
+        padding: 0;
+        margin: 0;
+        border: none;
+    }
+
+    .filtro-btn {
+        justify-content: center;
+        width: 192%;
+        padding: 0;
+    }
+
+    #lista-veiculos {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-top: 210px;
+        margin-left: 6px;
+    }
+
+    .card-homebtn button {
+        position: fixed;
+        z-index: 999;
+        bottom: 0;
+        left: 10px;
+    }
+
+}
