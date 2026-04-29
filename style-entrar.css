@@ -373,6 +373,11 @@ a {
     margin-left: 8px;
 }
 
+@media (max-width: 768px) {
+    .container-geral {
+        height: 220px;
+    }
+
 @media (max-width: 1000px) {
     .card-img{
         display: none;
