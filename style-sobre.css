@@ -266,8 +266,8 @@ footer a:hover {
 @media (max-width: 1140px) {
 
   .conteudo-footer {
-    display: grid;
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
     row-gap: 20px;
   }
 
